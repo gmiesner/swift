@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="emojinal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="how are you feeling today?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AIl-1P-QvU">
+                                <rect key="frame" x="18" y="126" width="394" height="24"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="24"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4wd-E7-yXs">
+                                <rect key="frame" x="0.0" y="157" width="258" height="206"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="162"/>
+                                <state key="normal" title="😀"/>
+                                <connections>
+                                    <action selector="clickCheesyTom:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pjP-0j-BHL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yrM-yL-Rua">
+                                <rect key="frame" x="225" y="158" width="176" height="206"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="162"/>
+                                <state key="normal" title="😭"/>
+                                <connections>
+                                    <action selector="clickSobbing:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tyg-Ul-TYF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4DX-5y-sbD">
+                                <rect key="frame" x="218" y="364" width="176" height="206"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="162"/>
+                                <state key="normal" title="🤩"/>
+                                <connections>
+                                    <action selector="clickStarryEyedPunk:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LKh-OY-zt4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Xn-Uo-hbS">
+                                <rect key="frame" x="34" y="364" width="176" height="206"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="162"/>
+                                <state key="normal" title="🙃"/>
+                                <connections>
+                                    <action selector="clickImFine:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lyB-jD-cSA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.39713964880000002" green="0.50604972029999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4DX-5y-sbD" firstAttribute="leading" secondItem="4Xn-Uo-hbS" secondAttribute="trailing" id="9BR-xd-Nyg"/>
+                            <constraint firstItem="yrM-yL-Rua" firstAttribute="top" secondItem="AIl-1P-QvU" secondAttribute="bottom" constant="21" id="J3R-ep-THn"/>
+                            <constraint firstItem="4wd-E7-yXs" firstAttribute="top" secondItem="AIl-1P-QvU" secondAttribute="bottom" constant="7" id="KgY-PD-EwW"/>
+                            <constraint firstItem="4DX-5y-sbD" firstAttribute="top" secondItem="AIl-1P-QvU" secondAttribute="bottom" constant="223" id="Tv2-nG-QWT"/>
+                            <constraint firstItem="yrM-yL-Rua" firstAttribute="leading" secondItem="4Xn-Uo-hbS" secondAttribute="trailing" constant="9" id="p6M-Xz-vif"/>
+                            <constraint firstItem="4Xn-Uo-hbS" firstAttribute="top" secondItem="AIl-1P-QvU" secondAttribute="bottom" constant="223" id="uLH-EN-kdX"/>
+                            <constraint firstItem="4DX-5y-sbD" firstAttribute="leading" secondItem="4Xn-Uo-hbS" secondAttribute="trailing" id="zgW-mc-a1x"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
